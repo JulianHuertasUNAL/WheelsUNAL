@@ -34,8 +34,13 @@ public class MainActivity extends AppCompatActivity {
         String Modelo = ModeloVehiculo.getText().toString();
         String Placa = PlacaVehiculo.getText().toString();
         String Cedula = NumeroCedula.getText().toString();
+
+        if(Vehiculo.isEmpty() || Modelo.isEmpty() || Placa.isEmpty() || Cedula.isEmpty()){
+            Toast.makeText(this,"Ingrese todos los datos",Toast.LENGTH_SHORT).show();
+        }
+        else{
         Toast.makeText(this, "Datos guardados correctamente"+Vehiculo+Modelo+Placa+Cedula, Toast.LENGTH_SHORT).show();
+        }//Condicional
 
-
-    }
+    }//Boton registrarse
 }

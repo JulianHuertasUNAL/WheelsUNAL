@@ -1,10 +1,14 @@
-package com.example.uberunal;
+package com.example.uberunal.ui.publicarRuta;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.uberunal.PublicarRuta1;
+import com.example.uberunal.PublicarRuta2;
+import com.example.uberunal.R;
 
 public class TipoRuta extends AppCompatActivity {
     public void publicarruta1(View view){

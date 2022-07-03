@@ -14,10 +14,21 @@
         android:theme="@style/Theme.UberUNAL"
         tools:targetApi="31">
         <activity
+            android:name=".PantallaPrincipal"
+            android:exported="true"
+            android:label="@string/title_activity_pantalla_principal"
+            android:theme="@style/Theme.UberUNAL.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".PublicarRuta2"
             android:exported="false" />
         <activity
-            android:name=".TipoRuta"
+            android:name=".ui.publicarRuta.TipoRuta"
             android:exported="false" />
         <activity
             android:name=".PublicarRuta1"
@@ -25,11 +36,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.uberunal.ui.publicarRuta.TipoRuta;
+
 public class PublicarRuta2 extends AppCompatActivity {
     EditText DireccionDestino;
     EditText Dias;

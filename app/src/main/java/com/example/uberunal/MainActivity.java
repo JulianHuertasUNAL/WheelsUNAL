@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.uberunal.ui.publicarRuta.TipoRuta;
+
 public class MainActivity extends AppCompatActivity {
     EditText tipoVehiculo;
     EditText ModeloVehiculo;
@@ -39,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this,"Ingrese todos los datos",Toast.LENGTH_SHORT).show();
         }
         else{
-        Toast.makeText(this, "Datos guardados correctamente"+Vehiculo+Modelo+Placa+Cedula, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Datos guardados correctamente"+Vehiculo+Modelo+Placa+Cedula, Toast.LENGTH_SHORT).show();
         }//Condicional
 
     }//Boton registrarse

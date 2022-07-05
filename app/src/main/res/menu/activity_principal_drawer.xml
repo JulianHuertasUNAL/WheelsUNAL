@@ -11,6 +11,11 @@
                 android:icon="@drawable/ic_account"    >
             </item>
             <item
+                android:id="@+id/nav_home"
+                android:title="Aplicar Nueva Ruta"
+                android:icon="@drawable/ic_addcirculo"    >
+            </item>
+            <item
                 android:id="@+id/nav_misrutas"
                 android:title="Mis Rutas"
                 android:icon="@drawable/ic_car"    >

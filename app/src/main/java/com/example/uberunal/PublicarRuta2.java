@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.uberunal.ui.publicarRuta.TipoRuta;
-
 public class PublicarRuta2 extends AppCompatActivity {
     EditText DireccionDestino;
     EditText Dias;
@@ -24,18 +22,18 @@ public class PublicarRuta2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_publicar_ruta2);
-        DireccionDestino = findViewById(R.id.destino);
-        Dias = findViewById(R.id.dias);
-        Salida = findViewById((R.id.hora));
-        CantidadCupos = findViewById(R.id.cantidadcupos);
-        Celular = findViewById(R.id.contacto);
+        DireccionDestino = findViewById(R.id.txt_origen);
+        Dias = findViewById(R.id.txt_dias);
+        Salida = findViewById((R.id.txt_hora));
+        CantidadCupos = findViewById(R.id.txt_cupos);
+        Celular = findViewById(R.id.txt_contacto);
     }
-    public void BotonGuardar(View view){
+    public void BotonGuardarRuta2(View view){
         String Origen = DireccionDestino.getText().toString();
         String Dia = Dias.getText().toString();
         String HoraSalida = Salida.getText().toString();
         String NumCupos = CantidadCupos.getText().toString();
-        int Cupos = Integer.parseInt(NumCupos);
+        //int Cupos = Integer.parseInt(NumCupos);
 
         String Contacto = Celular.getText().toString();
 

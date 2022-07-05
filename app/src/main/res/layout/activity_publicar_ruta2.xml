@@ -41,7 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dias" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_dias" />
 
     <TextView
         android:id="@+id/textView7"
@@ -54,10 +54,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/destino" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_origen" />
 
     <EditText
-        android:id="@+id/dias"
+        android:id="@+id/txt_dias"
         android:layout_width="313dp"
         android:layout_height="41dp"
         android:layout_marginTop="8dp"
@@ -81,10 +81,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.169"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hora" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_hora" />
 
     <EditText
-        android:id="@+id/cantidadcupos"
+        android:id="@+id/txt_cupos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -107,10 +107,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cantidadcupos" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_cupos" />
 
     <EditText
-        android:id="@+id/contacto"
+        android:id="@+id/txt_contacto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -136,7 +136,7 @@
         app:layout_constraintTop_toBottomOf="@+id/divider" />
 
     <EditText
-        android:id="@+id/destino"
+        android:id="@+id/txt_origen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -161,7 +161,7 @@
         app:srcCompat="@drawable/unal_casa2" />
 
     <EditText
-        android:id="@+id/hora"
+        android:id="@+id/txt_hora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -190,10 +190,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:backgroundTint="#4CAF50"
+        android:onClick="BotonGuardarRuta2"
         android:text="Guardar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contacto" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_contacto" />
 
     <ImageButton
         android:id="@+id/imageButton"

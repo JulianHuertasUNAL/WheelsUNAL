@@ -17,7 +17,7 @@ public class PublicarRuta1 extends AppCompatActivity {
     private EditText et_Dias;
     private EditText et_Salida;
     private EditText et_Cupos;
-    private EditText et_Celular;
+    private EditText et_Tarifa;
 
     public void publicarruta(View view){
         Intent i = new Intent(this, TipoRuta.class);
@@ -34,7 +34,7 @@ public class PublicarRuta1 extends AppCompatActivity {
         et_Dias = findViewById(R.id.txt_dias);
         et_Salida = findViewById((R.id.txt_hora));
         et_Cupos = findViewById(R.id.txt_cupos);
-        et_Celular = findViewById(R.id.txt_contacto);
+        et_Tarifa = findViewById(R.id.txt_contacto);
     }
 
     public void guardarRuta(View view){
@@ -49,7 +49,7 @@ public class PublicarRuta1 extends AppCompatActivity {
         String NumCupos = et_Cupos.getText().toString();
 
 
-        String Contacto = et_Celular.getText().toString();
+        String Contacto = et_Tarifa.getText().toString();
 
         if(Placa.isEmpty() || Origen.isEmpty() || Dia.isEmpty() || HoraSalida.isEmpty() || NumCupos.isEmpty() || Contacto.isEmpty()){
             Toast.makeText(this, "Complete todos los campos", Toast.LENGTH_SHORT).show();
@@ -71,7 +71,7 @@ public class PublicarRuta1 extends AppCompatActivity {
             et_Dias.setText("");
             et_Salida.setText("");
             et_Cupos.setText("");
-            et_Celular.setText("");
+            et_Tarifa.setText("");
 
             Toast.makeText(this, "Datos guardados de manera exitosa", Toast.LENGTH_SHORT).show();
 
@@ -91,7 +91,7 @@ public class PublicarRuta1 extends AppCompatActivity {
                 et_Dias.setText(fila.getString(1));
                 et_Salida.setText(fila.getString(2));
                 et_Cupos.setText(fila.getString(3));
-                et_Celular.setText(fila.getString(4));
+                et_Tarifa.setText(fila.getString(4));
                 BasedeDatos.close();
             }else{
                 Toast.makeText(this, "No se ha encontrado ninguna ruta", Toast.LENGTH_SHORT).show();
@@ -106,7 +106,7 @@ public class PublicarRuta1 extends AppCompatActivity {
         et_Dias.setText("");
         et_Salida.setText("");
         et_Cupos.setText("");
-        et_Celular.setText("");
+        et_Tarifa.setText("");
     }
     public void EliminarRuta(View view){
         Toast.makeText(this, "La Ruta ha sido eliminada", Toast.LENGTH_SHORT).show();
@@ -115,7 +115,7 @@ public class PublicarRuta1 extends AppCompatActivity {
         et_Dias.setText("");
         et_Salida.setText("");
         et_Cupos.setText("");
-        et_Celular.setText("");
+        et_Tarifa.setText("");
     }
 
 }
